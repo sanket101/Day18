@@ -1,0 +1,68 @@
+<html>
+	<head>
+		<script>
+			function Emp(name, age){
+				this.name = name;
+				this.age = age;
+			}
+		</script>
+	</head>
+	
+	<body>
+		<h1>Custom Object Demo</h1>
+		<hr>
+		<script> 
+			obj = new Object();
+			obj.name = "Ravi";
+			obj.age = 25;
+			obj.salary = 20000;
+			
+			document.write("<br> Name : " + obj.name);
+			document.write("<br> Age : " + obj.age);
+			document.write("<br> Salary : " + obj.salary);
+			
+			obj2 = new Object();
+			obj2.name = "Shami";
+			obj2.age = 28;
+			obj2.salary = 30000;
+			
+			document.write("<br> Name : " + obj2.name);
+			document.write("<br> Age : " + obj2.age);
+			document.write("<br> Salary : " + obj2.salary);
+		
+		</script>
+		<br>
+		<script>
+			e1 = new Emp('Phulka', 29);
+			document.write("<br> Name : " + e1.name);
+			document.write("<br> Age : " + e1.age);
+		</script>
+		<br>
+		<script>
+			j1 = {'name':'Pratap', 'age' : 28, 'salary' : 22000};
+			j2 = {'name':'Dinesh', 'age' : 38, 'salary' : 52000};
+			
+			document.write("<br> Name : " + j1.name);
+			document.write("<br> Age : " + j1.age);
+			document.write("<br> Salary : " + j1.salary);
+			
+			document.write("<br> Name : " + j2.name);
+			document.write("<br> Age : " + j2.age);
+			document.write("<br> Salary : " + j2.salary);
+		</script>
+		<hr>
+		<script>
+			document.write("<br>" + Math.PI);
+			document.write("<br>" + Math.E);
+			document.write("<br>" + Math.sqrt(25));
+			document.write("<br>" + Math.cbrt(27));
+			document.write("<br>" + Math.cbrt(100));
+			document.write("<br>" + Math.pow(3,2));
+			document.write("<br>" + Math.floor(2.9));
+			document.write("<br>" + Math.ceil(3.1));
+			document.write("<br>" + Math.round(2.4));
+			//Random number in range 0-28
+			document.write("<br>" + parseInt(Math.random()*28));
+		</script>
+	</body>
+</html>
